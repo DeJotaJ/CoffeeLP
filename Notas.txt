@@ -1,0 +1,5 @@
+Cor = #0E0504
+Cor 4 = #4B1F0E
+Cor 2 = #794028
+Cor 3 = #BE7656
+Cor 5 = #EFC3A4
