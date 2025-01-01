@@ -9,7 +9,7 @@ import './App.css'
 function App() {
 
   return (
-    <>
+    <main className="min-w-[100vw]">
         <Header/>
         <Home />
         <div className="bg-[#EFC3A4]">
@@ -17,7 +17,7 @@ function App() {
           <Sobre />
         </div>
         <Footer/>
-    </>
+    </main>
   )
 }
 

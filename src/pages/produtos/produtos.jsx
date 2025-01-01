@@ -42,14 +42,14 @@ export default function Produtos(){
                     bg-[#EFC3A4]
                     flex flex-wrap justify-center
                 '>
-                <div className="w-full flex">
-                    <div className="w-1/2 min-h-96 py-5 px-10 flex flex-wrap justify-center gap-7">
+                <div className="w-full flex md:flex-row flex-col">
+                    <div className="w-full px-2 md:w-1/2 md:min-h-96 md:py-5 md:px-10 flex md:flex-wrap justify-around gap-1 md:justify-center md:gap-7">
                         {cafes.slice(0, 4).map((image, index) =>(
-                            <span key={index} className='relative w-52 h-48 mx-5 my-0 rounded-lg overflow-y-hidden shadow-[#0E0504] shadow-sm cursor-pointer'>
+                            <span key={index} className='relative w-28 h-24  md:w-52 md:h-48 md:mx-5 my-0 rounded-lg overflow-y-hidden shadow-[#0E0504] shadow-sm cursor-pointer'>
                                 <img className='peer w-full h-full rounded-lg border-2 border-[#4B1F0E] peer' src={image.img} alt="" />
                                 <div className={`
                                     absolute top-full w-full h-full flex justify-center items-center bg-[#4B1F0E]/80 rounded-lg 
-                                    text-[#EFC3A4] text-xl uppercase font-semibold ${foco ? 'text-black' : ''}
+                                    text-[#EFC3A4] text-[10px] md:text-xl uppercase font-semibold ${foco ? 'text-black' : ''}
                                     peer-hover:top-0 hover:top-0 transition-* duration-200
                                 `}
                                 onClick={()=> (setFoco(!foco), setItem(image) )}
@@ -59,39 +59,39 @@ export default function Produtos(){
                             </span>
                         ))}
                     </div>
-                    <div className="w-1/2 min-h-96 flex flex-col justify-center items-center">
-                        <h2 className='h-[20%] flex items-center text-2xl uppercase font-semibold text-[#4B1F0E]'>
+                    <div className="w-full md:w-1/2 md:min-h-96 flex flex-col justify-center items-center">
+                        <h2 className='h-[20%] py-3 md:py-0 flex items-center text-lg md:text-2xl uppercase font-semibold text-[#4B1F0E]'>
                             Cafés Gelados
                         </h2>
-                        <p className='w-full h-70% px-7 text-lg text-[#4B1F0E] text-left font-semibold rounded-xl'>
+                        <p className='w-full h-70% px-7 text-[10px] md:text-lg text-[#4B1F0E] text-left md:font-semibold rounded-xl'>
                             Nossa cafeteria é um espaço dedicado a oferecer momentos únicos, onde a qualidade é o pilar central de tudo o que fazemos.
                             Especialistas em cafés gelados, buscamos elevar a experiência dos amantes dessa bebida, criando combinações que surpreendem e encantam. 
                             Além dos cafés, oferecemos uma seleção cuidadosa de sobremesas artesanais e salgados, preparados com ingredientes frescos e selecionados.
                             Aqui, cada detalhe importa, desde o atendimento acolhedor até o ambiente que convida à tranquilidade e conexão. Nosso compromisso é ser mais do que uma cafeteria, mas um lugar onde cada visita se transforma em uma memória especial.
                         </p>
-                        <h2 className='my-10 py1 px-2 rounded-lg flex items-center text-sm font-semibold bg-[#4B1F0E] text-amber-100  cursor-pointer'>
+                        <h2 className='my-2 md:my-10 py-0.5 px-2 rounded-lg flex items-center text-[10px] md:text-sm font-semibold bg-[#4B1F0E] text-amber-100  cursor-pointer'>
                             Ver mais
                         </h2>
                     </div>
                 </div>
-                <div className="w-full flex bg-[#4B1F0E]">
-                    <div className="w-1/2 min-h-96 flex flex-col justify-center items-center">
-                        <h2 className='h-[20%] flex items-center text-2xl uppercase font-semibold text-amber-100'>
+                <div className="w-full flex flex-col md:flex-row bg-[#4B1F0E]">
+                    <div className="w-full order-2 md:order-1 md:w-1/2 md:min-h-96 flex flex-col justify-center items-center">
+                        <h2 className='h-[20%] py-3 flex items-center text-lg md:text-2xl uppercase font-semibold text-amber-100'>
                             Cafés Gelados
                         </h2>
-                        <p className='w-full h-full px-7 text-lg text-amber-100 text-left font-semibold rounded-xl'>
+                        <p className='w-full h-70% px-7 text-[12px] md:text-lg text-amber-100 text-left md:font-semibold rounded-xl'>
                             Nossa cafeteria é um espaço dedicado a oferecer momentos únicos, onde a qualidade é o pilar central de tudo o que fazemos.
                             Especialistas em cafés gelados, buscamos elevar a experiência dos amantes dessa bebida, criando combinações que surpreendem e encantam. 
                             Além dos cafés, oferecemos uma seleção cuidadosa de sobremesas artesanais e salgados, preparados com ingredientes frescos e selecionados.
                             Aqui, cada detalhe importa, desde o atendimento acolhedor até o ambiente que convida à tranquilidade e conexão. Nosso compromisso é ser mais do que uma cafeteria, mas um lugar onde cada visita se transforma em uma memória especial.
                         </p>
-                        <h2 className='my-10 py1 px-2 rounded-lg flex items-center text-sm font-semibold bg-amber-100 text-[#4B1F0E] cursor-pointer'>
+                        <h2 className='my-2 md:my-10 py-0.5 px-2 rounded-lg flex items-center text-sm font-semibold bg-amber-100 text-[#4B1F0E] cursor-pointer'>
                             Ver mais
                         </h2>
                     </div>
-                    <div className="w-1/2 min-h-96 py-5 px-10 flex flex-wrap justify-center gap-7">
+                    <div className="w-full px-2 order-1 md:order-2 md:w-1/2 py-5 md:min-h-96 md:py-5 md:px-10 flex md:flex-wrap justify-evenly gap-1 md:justify-center md:gap-7">
                         {cafes.slice(0, 4).map((image, index) =>(
-                            <span key={index} className='relative w-52 h-48 mx-5 my-0 rounded-lg overflow-y-hidden shadow-[#0E0504] shadow-sm cursor-pointer'>
+                            <span key={index} className='relative w-28 h-24  md:w-52 md:h-48 md:mx-5 my-0 rounded-lg overflow-y-hidden shadow-[#0E0504] shadow-sm cursor-pointer'>
                                 <img className='peer w-full h-full rounded-lg border-2 border-[#EFC3A4] peer' src={image.img} alt="" />
                                 <div className={`
                                     absolute top-full w-full h-full flex justify-center items-center bg-[#4B1F0E]/80 rounded-lg 
@@ -107,15 +107,16 @@ export default function Produtos(){
                     </div>
                 </div>
                 <div className={`
-                    w-[43vw] h-[60vh] mt-1 scale-[1%] opacity-0 absolute bg-[#4B1F0E] rounded-2xl
-                    flex transform duration-300
-                    ${foco ? 'scale-[100%] opacity-100 left-[3.5vw] -mt-0' : ' -left-[3.5vw]'} 
+                    md:w-[43vw] md:h-[60vh] md:mt-1 scale-[1%] opacity-0 absolute bg-[#4B1F0E] rounded-2xl
+                    w-full
+                    flex flex-col md:flex-row transform duration-300
+                    ${foco ? 'scale-[100%] opacity-100 md:left-[3.5vw] md:-mt-0' : 'md:-left-[3.5vw]'} 
                 `}>
                     <span className="absolute top-1 right-3 text-amber-100 text-3xl font-extrabold" onClick={()=> setFoco(!foco)}> X </span>
-                    <div className="w-1/2 h-full p-10 flex justify-center items-center border-r-2 border-amber-100">
+                    <div className="md:w-1/2 h-full p-10 flex justify-center items-center border-r-2 border-amber-100">
                         <img className="w-full h-2/3 rounded-3xl" src={item.img} alt="" />
                     </div>
-                    <div className="w-1/2 h-full py-5 px-5 flex flex-col items-star border">
+                    <div className="md:w-1/2 h-full py-5 px-5 flex flex-col items-star">
                         <span className="w-full my-5 text-center text-amber-100 text-2xl uppercase font-semibold">{item.title}</span>
                         <p className="max-h-full my-1 text-amber-100 flex justify-start text-left text-md font-semibold">
                             {item.desc}
