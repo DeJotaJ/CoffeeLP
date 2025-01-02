@@ -22,7 +22,7 @@ export default function Produtos(){
                 <div className='w-full h-auto py-5 flex flex-col md:flex-row bg-[#EFC3A4]/100'>
                     <div className='w-full md:w-[55%] px-5 md:px-10 flex flex-col items-start'>
                         <h2 className='w-full md:w-[85%] my-5 md:px-10 text-3xl text-[#4B1F0E] text-left font-semibold '>SOBRE NÓS</h2>
-                        <p className='w-full text-[12px] md:w-[85%] md:h-full md:px-10 md:text-lg text-[#4B1F0E] text-left md:font-semibold rounded-xl'>
+                        <p className='w-full md:w-[85%] md:h-full md:px-10 md:text-lg text-[#4B1F0E] text-left md:font-semibold rounded-xl'>
                         Nossa cafeteria é um espaço dedicado a oferecer momentos únicos, onde a qualidade é o pilar central de tudo o que fazemos.
                         Especialistas em cafés gelados, buscamos elevar a experiência dos amantes dessa bebida, criando combinações que surpreendem e encantam. 
                         Além dos cafés, oferecemos uma seleção cuidadosa de sobremesas artesanais e salgados, preparados com ingredientes frescos e selecionados.
