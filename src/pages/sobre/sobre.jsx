@@ -15,7 +15,7 @@ export default function Produtos(){
         <>
             <div 
                 id='sobre' 
-                className='max-w-full min-h-[100vh]
+                className='max-w-full min-h-[100vh] relative
                     flex flex-wrap justify-center items-start gap-y-0
                     
                 '>

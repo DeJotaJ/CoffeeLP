@@ -12,10 +12,8 @@ function App() {
     <main className="min-w-[100vw]">
         <Header/>
         <Home />
-        <div className="bg-[#EFC3A4]">
-          <Produtos />
-          <Sobre />
-        </div>
+        <Produtos />
+        <Sobre />
         <Footer/>
     </main>
   )

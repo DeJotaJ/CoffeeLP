@@ -18,11 +18,11 @@ export default function Header(){
                         absolute w-full h-[100vh] -top-[100vh] text-xl tranform duration-75
                         ${menuOpen === true ? 'top-[0vh]':'-top-[100vh]'}
                 `}>
-                    <div className="md:w-full md:h-auto min-h-[10vh] py-2 flex flex-col justify-evenly gap-0 md:p-0 md:flex md:flex-row md:justify-evenly bg-[#4B1F0E]/100 md:bg-[#4B1F0E]/0">
-                        <a className="py-2 hover:bg-white/10 md:px-1 hover:font-bold" href="#inicio" onClick={() => setMenuOpen(false)}>Início</a>
-                        <a className="py-2 hover:bg-white/10 md:px-1 hover:font-bold" href="#produtos" onClick={() => setMenuOpen(false)}>Produtos</a>
-                        <a className="py-2 hover:bg-white/10 md:px-1 hover:font-bold" href="#galeria" onClick={() => setMenuOpen(false)}>Galeria</a>
-                        <a className="py-2 hover:bg-white/10 md:px-1 hover:font-bold" href="#sobre" onClick={() => setMenuOpen(false)}>Sobre</a>
+                    <div className="md:w-full md:h-auto min-h-[10vh] py-2 flex flex-col justify-evenly gap-0 md:p-0 md:flex md:flex-row md:justify-evenly md:items-center bg-[#4B1F0E]/100 md:bg-[#4B1F0E]/0">
+                        <a className="py-2 hover:bg-white/10 md:px-1 hover:font-bold md:hover:bg-white/0" href="#inicio" onClick={() => setMenuOpen(false)}>Início</a>
+                        <a className="py-2 hover:bg-white/10 md:px-1 hover:font-bold md:hover:bg-white/0" href="#produtos" onClick={() => setMenuOpen(false)}>Produtos</a>
+                        <a className="py-2 hover:bg-white/10 md:px-1 hover:font-bold md:hover:bg-white/0" href="#galeria" onClick={() => setMenuOpen(false)}>Galeria</a>
+                        <a className="py-2 hover:bg-white/10 md:px-1 hover:font-bold md:hover:bg-white/0" href="#sobre" onClick={() => setMenuOpen(false)}>Sobre</a>
                     </div>
                     <div className={`bg-black/50 w-full min-h-[100vh] ${menuOpen === true ? 'block':'hidden'} md:hidden `} onClick={() => setMenuOpen(false)}>
                     
