@@ -33,15 +33,18 @@ export default function Carousel({array}) {
   }
 
   return (
-    <div id="galeria" className="relative w-[100vw] md:h-auto bg-[#EFC3A4]/0 md:py-5 flex justify-center items-center flex-wrap">
-        <h2 className='w-full my-2 md:my-5 text-3xl uppercase font-semibold text-[#4B1F0E]'>FOTO</h2>
+    <div 
+      id="galeria" 
+      className="relative w-[100vw] my-2 md:py-5 flex justify-center items-center flex-wrap
+
+    ">
+      <h2 className='w-full my-2 md:my-5 text-3xl uppercase font-semibold text-[#4B1F0E]'>FOTO</h2>
       <button
         onClick={prevImage}
-        className="h-10 md:top-1/2 transform rotate-180 md:-translate-y-1/2 text-[#4B1F0E] p-2 rounded-full"
-      >
+        className="h-10 flex justify-center items-center rotate-180 text-[#4B1F0E] py-2 rounded-full">
         <img src="./setaMarrom.png" alt="" />
       </button>
-      <div className="w-3/5 md:w-[80vw] md:mx-5 px-0 h-full flex justify-around gap-0">
+      <div className="w-3/5 md:w-[80vw] md:mx-5 px-0 h-full flex justify-around">
         {visibleImages.map((image, index) => (
           <div key={index} className="w-full md:w-1/3 mx-1">
             <img
@@ -54,7 +57,7 @@ export default function Carousel({array}) {
       </div>
       <button
         onClick={nextImage}
-        className="h-10 md:top-[50%] transform md:-translate-y-1/2 text-[#4B1F0E] p-2 rounded-full"
+        className="h-10 flex justify-center items-center text-[#4B1F0E] py-2 rounded-full"
       >
         <img src="./setaMarrom.png" alt="" />
       </button>
