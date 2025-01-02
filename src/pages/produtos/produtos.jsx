@@ -60,7 +60,6 @@ export default function Produtos(){
                                     text-[#EFC3A4] text-[10px] md:text-xl uppercase font-semibold ${foco ? 'text-black' : ''}
                                     peer-hover:top-0 hover:top-0 transition-* duration-200
                                 `}
-                                
                                 > 
                                     {image.title}
                                 </div>
